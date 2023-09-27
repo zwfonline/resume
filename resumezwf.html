@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME JOE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+  <body>
+     
+      <div class="left-section">
+            <div class="button-container">
+                <button class="selection-button">Home</button>
+                <button class="selection-button" onclick="showAboutModal()">About</button>
+                <button class="selection-button" onclick="showEducationModal()">Education</button>
+                <button class="selection-button" onclick=" showWorkModal() ">Work Experiences</button>
+                <button class="selection-button" onclick="showskillModal()">Skills</button>
+                <button class="selection-button" onclick="showrefereeModal()">Referees</button>
+            </div>
+            <div class="left-mid-section"></div>
+            <div class="contactIcon-container">  
+                    <img class="contactIcon" src="pictures\facebook.png"  onclick="facebook()">
+                    <img class="contactIcon" src="pictures\ins.png" onclick="ins()">
+                    <img class="contactIcon" src="pictures\linkedin.png" onclick="linkedin()">
+            </div>
+      </div>
+      <div class="right-section">
+         <div class= "content-aera">
+               <div class="right-top-aera">
+                    <div class = "information">
+                        <div class = "hi">Hi,I'm</div>
+                        <div class = "Joe">WEIFENG</div>
+                        <div class = "Joe">ZHOU</div>
+                        <div class="horizontal-line"></div>
+                        <div class = "Developer">Junior Frontend Developer</div>
+                    </div>
+                    <div class="photo-aera"><img class="careerPhoto" src="pictures/careerPhoto.jpg"></div>
+                </div>
+               <div class="hire">
+                     <button class="downloadResume" onclick="downloadFile()">Download Resume</button>
+                     <button onclick="showModal()" class="contactMe" >Contact Me</button>
+               </div>
+               <div class = 'right-bottom'>
+                       <div class="about">Objective</div>
+                       <div class="aboutContent">
+                        I am a junior web designer based in Adelaide, currently pursuing studies in IT at the University of South Australia. I am actively seeking opportunities for internships or part-time positions in front-end development. With a background in two other industries, I bring a unique perspective to the IT field. I am known for my creative approach and passionate dedication to the industry.
+                       </div>
+               </div>
+         </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p class="contact-info">Phone: 0423-403-737</p>
+            <p class="contact-info">Email: zwfonline@qq.com</p>
+            <p class="contact-info">LinkedIn: https://www.linkedin.com/in/weifeng-zhou-2824bb1b9</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+      </div>
+
+      <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAboutModal()">&times;</span>
+            <div class="about-title">About Me</div>
+            <div class="about-content">
+               <p class="aboutmetext">I am WEIFENG ZHOU, commonly known as Joe. I am currently pursuing a Master's degree in IT at the University of South Australia. I have acquired proficiency in various computer languages such as JAVASCRIPT, PYTHON, HTML, CSS, and MySQL. My career aspiration is to become an excellent web developer.
+               <p class="aboutmetext">Prior to this, I gained valuable work experience in two different industries and hold a Master of Business  degree from the University of Queensland. I believe my diverse background will bring a unique perspective to the IT field.</p>
+               <p class="aboutmetext">I am passionate about continuous learning and exploring new technologies to stay at the forefront of the industry. I value teamwork and possess strong problem-solving skills and effective communication abilities. By combining my technical knowledge with creativity, I look forward to contributing to the creation of outstanding websites and applications.</p>
+            </div>
+            <button onclick="closeAboutModal()">Close</button>
+        </div>
+      </div>
+
+      <div id="educationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEducationModal()">&times;</span>
+            <div class="about-title">Education History</div>
+            <div class="eductation-content">
+                   <div class="university">
+                         <img class="unilogo" src="pictures/segi.png" onclick="openSegi()">
+                         <p class="uniinfo">Bachelor of Business Management (Marketing Management)</p>
+                         <p class="uniinfo">2016-2019</p>
+                   </div>
+
+                   <div class="university">
+                        <img class="unilogo" src="pictures/UQ.png" onclick="openUQ()"></a>
+                        <p class="uniinfo">Master of Business (Supply Chain Management & Advertising)
+                        <p class="uniinfo">2020-2021</p>
+                   </div>
+                   <div class="university">
+                        <img class="unilogo" src="pictures/Unisa.png" onclick="openUniSA()">
+                        <p class="uniinfo">Master of Information Technology (Enterprise Management)</p>
+                        <p class="uniinfo">2023-2025</p>
+                   </div>
+                   <div class="university">
+                        <img class="unilogo" src="pictures/mitx.jpg" onclick="openMITX()">
+                        <p class="uniinfo">MicroMaster of Supply Chain Management </p>
+                        <p class="uniinfo mitxtime",>2019-2020 (Online Study)</p>
+                   </div>
+            </div>
+            <button onclick="closeEducationModal()">Close</button>
+        </div>
+      </div>
+
+      <div id="workModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeWorkModal()">&times;</span>
+            <div class="about-title">Work History</div>
+            <div class="eductation-content">
+                   <div class="university">
+                         <img class="unilogo" src="pictures/SF.png" onclick="openSF()">
+                         <p class="uniinfo">Chongqing, China</p>
+                         <p class="uniinfo">Freight Forwarder (International Department)</p>
+                         <p class="uniinfo">4.2021-11.2021</p>
+                   </div>
+
+                   <div class="university">
+                        <img class="unilogo" src="pictures/deloitte.jpg" onclick="openDeloitte()">
+                        <p class="uniinfo">Chongqing, China</p>
+                         <p class="uniinfo"> Analyst (Transfer Pricing in Tax Department) </p>
+                         <p class="uniinfo">12.2021-6.2022</p>
+                   </div>
+            </div>
+            <button onclick="closeWorkModal()">Close</button>
+        </div>
+      </div>
+
+      <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeskillModal()">&times;</span>
+            <div class="about-title">Skills</div>
+            <div class="skill-content">
+                   <img class="skillpic" src="pictures/skills.jpg">
+                </div>
+            </div>
+            <button onclick="closeskillModal()">Close</button>
+        </div>
+      </div>
+
+      <div id="refereeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closerefereeModal()">&times;</span>
+            <div class="about-title">Referees</div>
+            <div class="skill-content">
+                   <div class="pam">
+                   <img class="refereespic" src="pictures/pam.jpg">
+                   <p class="uniinfo">Dr Pam Hawkswell </p>
+                   <p class="uniinfo">Lecturer in Career Transition</p>
+                   <p class="uniinfo">The University of Queensland </p>
+                   <p class="uniinfo">p.hawkswell@uq.edu.au</p>
+                   </div>
+
+                   <div class="pam">
+                    <img class="refereespic" src="pictures/aly.jpg">
+                    <p class="uniinfo">Alyson Rowe Hopkins  </p>
+                    <p class="uniinfo">UQ Alumni</p>
+                    <p class="uniinfo">The University of Queensland </p>
+                    <p class="uniinfo">aly.teacher@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+            <button onclick="closerefereeModal()">Close</button>
+        </div>
+      </div>
+
+    <script src="resumezwf.js"></script>
+  </body>
+</head>    
+</html>

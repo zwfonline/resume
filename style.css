@@ -1,0 +1,308 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.selection-button{
+    background-color: transparent; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section{
+    width: 22%;
+    height: 100%;
+    background-color: rgb(2, 2, 59);
+    float: left;
+    box-sizing: border-box; 
+    position: fixed; 
+}
+
+.contactIcon{
+    background-color: none;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.contactIcon-container{
+    display: flex;
+    position: fixed;
+    bottom: 20px; 
+    justify-content: space-around;
+}
+
+.right-section{
+    background-color: white;
+    width: 75%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-aera{
+    box-sizing: border-box; 
+    left: 30;
+    bottom: 10;
+    position: fixed;
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    margin: 5%;
+}
+
+.right-top-aera{
+    height: 50%;
+    background-color: rgb(216, 220, 224);
+    position: fixed;
+    top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.hi{
+    color: black;
+    margin-left: 40px;
+    width: 30px;
+}
+
+.Joe{
+    color: black;
+    margin-left: 40px;
+    width: 30px;
+    font-size: 60PX;
+    font-style: Roboto;
+    
+}
+.horizontal-line {
+    border: none;
+    height: 2px;
+    background-color: #000; 
+    margin: 0; 
+    width: 100px;
+    margin-top: 20px;
+    margin-left:40px ;
+}
+.Developer{
+    color: black;
+    margin-left: 40px;
+    width: 370px;
+    font-size: 20PX;
+    margin-top: 30px;
+    font-style: Roboto;
+}
+.information {
+    top: 20%;
+    position: relative; /* 内部容器设为相对定位 */
+    align-items: center; /* 垂直居中 */
+    height: 80%; /* 高度占满外部容器 */
+    flex-direction: column; /* 垂直居中文本内容 */
+    width: 40%;
+}
+
+.careerPhoto{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+}
+.photo-aera{
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-right: 30%;
+}
+.hire{
+    height: 15%;
+    position: fixed;
+    top: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.downloadResume{
+    flex-grow: 1; 
+    width: 50%; 
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(151, 9, 9);
+    color: white;
+}
+.contactMe{
+    flex-grow: 1; 
+    width: 50%; 
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(2, 2, 59);
+    color: white;
+}
+
+
+.right-bottom{
+    height: 35%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.about{
+    font-size: 30px;
+    width: 15%;
+    height: 15%;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+.aboutContent{
+    font-size: 16px;
+    word-wrap: break-word;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 5%;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center; /* 居中文本内容 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 添加一些样式来美化内容 */
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.aboutmetext{
+    text-align: left;
+    line-height: 2;
+    font-style: Roboto;
+}
+
+.about-title{
+    font-size: 30px;
+    font-style: Roboto;
+}
+
+.unilogo{
+     width: 180px;
+     margin-bottom: 10px;
+     height: 100px;
+     cursor: pointer;
+}
+
+.eductation-content{
+    display: flex;
+}
+
+.university {
+    flex: 1;
+    padding: 20px;
+}
+
+.uniinfo{
+    font-size: 13px;
+}
+
+.mitxtime{
+    margin-top: 30px;
+}
+
+.skillpic{
+    width: 900px;
+    height: 400px;
+}
+
+.skill-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; 
+}
+
+.refereespic{
+    width: 140px;
+    height: 180px;
+}
+
+.pam{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+
