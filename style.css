@@ -44,7 +44,7 @@ html, body {
 .contactIcon-container{
     display: flex;
     position: fixed;
-    bottom: 20px; 
+    bottom: 8%; 
     justify-content: space-around;
 }
 
@@ -83,7 +83,7 @@ html, body {
 .hi{
     color: black;
     margin-left: 40px;
-    width: 30px;
+    width: 190px;
 }
 
 .Joe{
@@ -112,7 +112,7 @@ html, body {
     font-style: Roboto;
 }
 .information {
-    top: 20%;
+    top: 5%;
     position: relative; /* 内部容器设为相对定位 */
     align-items: center; /* 垂直居中 */
     height: 80%; /* 高度占满外部容器 */

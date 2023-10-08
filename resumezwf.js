@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const greetingElement = document.getElementById('greeting');
+    const currentHour = new Date().getHours();
+
+    let greeting;
+
+    if (currentHour >= 5 && currentHour < 12) {
+        greeting = 'Good Morning！I am';
+    } else if (currentHour >= 12 && currentHour < 18) {
+        greeting = 'Good Afternoon! I am';
+    } else if (currentHour >= 18 && currentHour < 24) {
+        greeting = 'Good Evening！ I am';
+    } else {
+        greeting = 'Hi！ I am';
+    }
+
+    greetingElement.textContent = greeting;
+});
+
 function showModal() {
     var modal = document.getElementById('myModal');
     modal.style.display = 'block';
