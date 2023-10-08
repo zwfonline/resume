@@ -14,6 +14,7 @@ html, body {
     font-size: 25px;
     margin-top: 15px;
     margin-bottom: 15px;
+    width: 100%; 
 }
 
 .button-container{
@@ -121,14 +122,16 @@ html, body {
 
 .careerPhoto{
     width: auto;
-    height: auto;
-    max-height: 100%;
+    height: 100%;
 }
 .photo-aera{
     height: 100%;
     display: flex;
-    overflow: hidden;
-    margin-right: 30%;
+    margin-right: 20%;
+}
+.avatar{
+    width: 50%;
+    height: auto;
 }
 .hire{
     height: 15%;
