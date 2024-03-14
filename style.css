@@ -184,9 +184,8 @@ html, body {
     font-size: 16px;
     word-wrap: break-word;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: 5%;
-
 }
 
 .modal {
@@ -743,7 +742,7 @@ button:hover {
     .right-section{
         background-color: white;
         width: 75%;
-        height: 100%;
+        height: auto;
         float: left;
         box-sizing: border-box;
         margin-left: 25%;
@@ -949,7 +948,7 @@ button:hover {
         text-align: left;
         line-height: 2;
         font-style: Roboto;
-        font-size: 12px;
+        font-size: 10px;
     }
     .aboutmetextContainer{
         margin-top: 2%;
@@ -964,13 +963,11 @@ button:hover {
     }
     .educationContainer{
         width: 100%;
-        justify-content: center;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-
-    
+        margin-top: 20%;
     }
     
     .education-title{
@@ -1037,7 +1034,8 @@ button:hover {
     }
 
     .about-content{
-        height: 300%;
+        height: auto;
+        margin-top: 250%;
     }
     
 
