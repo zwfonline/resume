@@ -28,34 +28,27 @@ function closeModal() {
 }
 
 function showAboutModal() {
-    var aboutModal = document.getElementById('aboutModal');
-    aboutModal.style.display = 'block';
+    window.location.href = 'about.html'
 }
 
-function closeAboutModal() {
-    var aboutModal = document.getElementById('aboutModal');
-    aboutModal.style.display = 'none';
+function homepage() {
+    window.location.href = 'resumezwf.html'
 }
 
 function showEducationModal() {
-    var educationModal = document.getElementById('educationModal');
-    educationModal.style.display = 'block';
+    window.location.href = 'education.html'
 }
 
-function closeEducationModal() {
-    var educationModal = document.getElementById('educationModal');
-    educationModal.style.display = 'none';
-}
+
 
 function showWorkModal() {
-    var workModal = document.getElementById('workModal');
-    workModal.style.display = 'block';
+    window.location.href = 'work.html'
 }
 
-function closeWorkModal() {
-    var workModal = document.getElementById('workModal');
-    workModal.style.display = 'none';
+function showProjectModal(){
+    window.location.href = 'project.html'
 }
+
 
 function openSegi(){
     window.open("https://en.wikipedia.org/wiki/SEGi_University_and_Colleges", "width=600,height=400");
@@ -77,29 +70,26 @@ function openSF(){
     window.open("https://en.wikipedia.org/wiki/SF_Express", "width=600,height=400");
 }
 
+function openASO(){
+    window.open("https://zwfonline.github.io/aso/home.html");
+}
+
 function openDeloitte(){
     window.open("https://en.wikipedia.org/wiki/Deloitte", "width=600,height=400");
 }
 
 function showskillModal() {
-    var workModal = document.getElementById('skillModal');
-    workModal.style.display = 'block';
+    window.location.href = 'skills.html'
 }
 
-function closeskillModal() {
-    var workModal = document.getElementById('skillModal');
-    workModal.style.display = 'none';
-}
+
 
 function showrefereeModal() {
-    var workModal = document.getElementById('refereeModal');
-    workModal.style.display = 'block';
+    window.location = 'referees.html'
+
 }
 
-function closerefereeModal() {
-    var workModal = document.getElementById('refereeModal');
-    workModal.style.display = 'none';
-}
+
 
 function ins(){
     window.open("https://www.instagram.com/zwfonline/", "width=600,height=400");
