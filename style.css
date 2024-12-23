@@ -1,1050 +1,846 @@
-@media (min-width:1200px){
-html, body {
-    height: 100%;
+body {
     margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.selection-button{
-    background-color: transparent; 
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%; 
-}
-
-.button-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.left-section{
-    width: 22%;
-    height: 100%;
-    background-color: rgb(2, 2, 59);
-    float: left;
-    box-sizing: border-box; 
-    position: fixed; 
-}
-
-.contactIcon{
-    background-color: none;
-    width: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-}
-
-.contactIcon-container{
-    display: flex;
-    position: fixed;
-    bottom: 8%; 
-    justify-content: space-around;
-}
-
-
-.right-section{
-    background-color: white;
-    width: 75%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-    margin-left: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-aera{
-    box-sizing: border-box; 
-    left: 30;
-    bottom: 10;
-    position: fixed;
-    width: 80%;
-    height: 90%;
-    background-color: white;
-    margin: 5%;
-}
-
-.right-top-aera{
-    height: 50%;
-    background-color: rgb(216, 220, 224);
-    position: fixed;
-    top: 0;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.hi{
-    color: black;
-    margin-left: 40px;
-    width: 190px;
-}
-
-.Joe{
-    color: black;
-    margin-left: 40px;
-    width: 30px;
-    font-size: 60PX;
-    font-style: Roboto;
-    
-}
-.horizontal-line {
-    border: none;
-    height: 2px;
-    background-color: #000; 
-    margin: 0; 
-    width: 100px;
-    margin-top: 20px;
-    margin-left:40px ;
-}
-.Developer{
-    color: black;
-    margin-left: 40px;
-    width: 370px;
-    font-size: 20PX;
-    margin-top: 30px;
-    font-style: Roboto;
-}
-.information {
-    top: 5%;
-    position: relative; /* 内部容器设为相对定位 */
-    align-items: center; /* 垂直居中 */
-    height: 80%; /* 高度占满外部容器 */
-    flex-direction: column; /* 垂直居中文本内容 */
-    width: 40%;
-}
-
-.careerPhoto{
-    width: auto;
-    height: 100%;
-}
-.photo-aera{
-    height: 100%;
-    display: flex;
-    margin-right: 20%;
-}
-.avatar{
-    width: 30%;
-    height: auto;
-}
-.hire{
-    height: 15%;
-    position: fixed;
-    top: 50%;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.downloadResume{
-    flex-grow: 1; 
-    width: 50%; 
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    background-color: rgb(151, 9, 9);
-    color: white;
-}
-.contactMe{
-    flex-grow: 1; 
-    width: 50%; 
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    background-color: rgb(2, 2, 59);
-    color: white;
-}
-
-
-.right-bottom{
-    height: 35%;
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column; 
-}
-
-.about{
-    font-size: 30px;
-    width: 15%;
-    height: 15%;
-    margin-top: 6%;
-    margin-left: 5%;
-}
-.aboutContent{
-    font-size: 16px;
-    word-wrap: break-word;
-    width: 80%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 1% auto;
-    padding: 5px;
-    width: 90%;
-    text-align: center; /* 居中文本内容 */
-    border-radius: 10px;
-
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 添加一些样式来美化内容 */
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.contact-info {
-    font-weight: bold;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.aboutmetext{
-    text-align: left;
-    line-height: 2;
-    font-style: Roboto;
-    font-size: 13px;
-}
-.aboutmetextContainer{
-    margin-top: 2%;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-.about-title{
-    font-size: 30px;
-    font-style: Roboto;
-}
-.educationContainer{
-    width: 100%;
-    justify-content: center;
+/* Navigation Bar */
+nav {
+    background-color: #2980b9;
+    padding: 15px;
     text-align: center;
 }
 
-.education-title{
-    margin-bottom: 10%;
-    left:25%;
-    top:4%;
-    position: absolute;
-}
-.skillsPic{
-    width: 70%;
-    margin-top: 5%;
-}
 
-.unilogo{
-     width: 180px;
-     margin-bottom: 10px;
-     height: 100px;
-     cursor: pointer;
-}
-
-.projectlogo{
-    width: 30%;
-    margin-bottom: 4%;
-
-     cursor: pointer;
-}
-
-.eductation-content{
-    display: flex;
-}
-
-.university {
-    flex: 1;
+/* Leave a Message Section */
+.leave-message {
+    max-width: 800px;
+    margin: 30px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 110px;
+}
+.experience {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.uniinfo{
-    font-size: 13px;
+.experience h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #2980b9;
 }
 
-.mitxtime{
-    margin-top: 30px;
+.timeline {
+    position: relative;
+    padding: 20px 0;
 }
 
-.skillpic{
-    width: 900px;
-    height: 400px;
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
 }
 
-.skill-content{
+.education {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.education-card {
+    position: relative;
+    padding: 20px;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.map-button {
+    position: absolute;
+    right: 20px;  /* 设置为右边距 */
+    bottom: 20px; /* 设置为底边距 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.map-button img {
+    height: 40px !important; 
+}
+
+/* Projects Section */
+.projects {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    position: relative; /* 为了定位按钮 */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* 添加图片淡入淡出效果 */
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Project Cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.1); /* 卡片变灰 */
+}
+
+.project-card:hover img {
+    opacity: 0.5; /* 图片变透明以显示灰色效果 */
+}
+
+/* View Project Button */
+.view-project-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    display: none; /* 默认隐藏 */
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover .view-project-button {
+    display: block; /* 悬停时显示按钮 */
+}
+
+.view-project-button:hover {
+    background-color: #1abc9c;
+}
+
+.education-card h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.education-card .date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.education-card p {
+    margin: 5px 0;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline-item img{
+    height: 60px; 
+    
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.timeline-content .date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.timeline-content p {
+    margin-top: 10px;
+    color: black;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+}
+.leave-message h3 {
+    margin-top: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+nav a, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+/* Banner Section */
+.banner {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner img {
+    width: 250px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* About Me Section */
+.about-me {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about-me h3 {
+    margin-top: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.about-me p {
+    margin: 14px 0;
+    line-height: 1.9;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.skills h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fields Section */
+.fields {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.fields h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.fields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 每行最多三个 */
+    gap: 20px;
+
+}
+
+.field-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.field-item img {
+    width: 80px; /* 图标大小 */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.field-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+.social-media .sociaoIcon a svg {
+    width: 24px;
+    height: 24px; color: white; margin-left: 20px; margin-top: 10px;
+}
+.sociaoIcon{height: 50px; }
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-links a:hover {
+    color: #1abc9c;
+}
+
+.education img{ height: 50px;
+}
+
+/* Referee Section */
+.referee {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.referee h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.referee-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 500px; 
+    justify-content: space-between;
+    margin-bottom: 10%;
 }
 
-.refereespic{
-    width: 140px;
-    height: 180px;
+.referee-info {
+    flex: 1;
+    text-align: left;
 }
 
-.pam{
-    margin-left: 60px;
-    margin-right: 60px;
-}}
+.referee-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
 
-@media (min-width:700px) and (max-width:1199px){
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif; 
+.referee-info p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1abc9c;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Personal Life Section */
+.personal-life {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.personal-life h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #2980b9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item.left:before {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 4px solid #2980b9;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.right:before {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 4px solid #2980b9;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Referee Photo */
+.referee-photo img {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-links a:hover {
+    color: #1abc9c;
+}
+.hamburger-menu {
+    display:none; /* 显示汉堡菜单 */
+}
+
+@media (max-width: 821px) {
+    .banner {
+        padding: 30px 10px;
+    }
+
+
+    .banner img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h2 {
+        font-size: 1.2em;
+    }
+
+    .about-me {
+        max-width: 90%;
+        padding: 15px;
     }
     
-    .selection-button{
-        background-color: transparent; 
-        color: white;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        font-size: 12px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 100%; 
-    }
     
-    .button-container{
-        display: flex;
-        flex-direction: column;
+    footer {
+        padding: 15px 0;
     }
+
+    footer .social-links a {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
     
-    .left-section{
-        width: 22%;
-        height: 100%;
-        background-color: rgb(2, 2, 59);
-        float: left;
-        box-sizing: border-box; 
-        position: fixed; 
+    .banner h1 {
+        font-size: 2em;
     }
-    
-    .contactIcon{
-        background-color: none;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border: none;
-        border-radius: 100px;
-        cursor: pointer;
+
+    .map-button img {
+        height: 20px !important; 
     }
-    
-    .contactIcon-container{
-        display: flex;
-        position: fixed;
-        bottom: 8%; 
-        justify-content: space-around;
+
+    .banner h2 {
+        font-size: 1.2em;
     }
-    
-    
-    .right-section{
-        background-color: white;
-        width: 75%;
-        height: 100%;
-        float: left;
-        box-sizing: border-box;
-        margin-left: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    nav {
+        background-color: #2980b9;
+        padding: 10px 0;
     }
-    
-    .content-aera{
-        box-sizing: border-box; 
-        left: 30;
-        bottom: 10;
-        position: fixed;
-        width: 80%;
-        height: 90%;
-        background-color: white;
-        margin: 5%;
-    }
-    
-    .right-top-aera{
-        height: 50%;
-        background-color: rgb(216, 220, 224);
-        position: fixed;
-        top: 0;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .hi{
-        color: black;
-        margin-left: 40px;
-        width: 190px;
-    }
-    
-    .Joe{
-        color: black;
-        margin-left: 40px;
-        width: 30px;
-        font-size: 30PX;
-        font-style: Roboto;
-        
-    }
-    .horizontal-line {
-        border: none;
-        height: 2px;
-        background-color: #000; 
-        margin: 0; 
-        width: 100px;
-        margin-top: 20px;
-        margin-left:40px ;
-    }
-    .Developer{
-        color: black;
-        margin-left: 40px;
-        width: 370px;
-        font-size: 10PX;
-        margin-top: 30px;
-        font-style: Roboto;
-    }
-    .information {
-        top: 5%;
-        position: relative; 
+
+    .hamburger-menu {
+        display: block; /* 显示汉堡菜单 */
+        height: 35px;
         align-items: center; 
-        height: 80%; 
-        flex-direction: column; 
-        width: 40%;
-    }
-    
-    .careerPhoto{
-        width: auto;
-        height: 70%;
-    }
-    .photo-aera{
-        height: 100%;
-        display: flex;
-        margin-right: 20%;
-    }
-    .avatar{
-        width: 30%;
-        height: auto;
-    }
-    .hire{
-        height: 11%;
-        position: fixed;
-        top: 50%;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .downloadResume{
-        flex-grow: 1; 
-        width: 50%; 
-        cursor: pointer;
-        border: none;
-        font-size: 15px;
-        background-color: rgb(151, 9, 9);
-        color: white;
-    }
-    .contactMe{
-        flex-grow: 1; 
-        width: 50%; 
-        cursor: pointer;
-        border: none;
-        font-size: 15px;
-        background-color: rgb(2, 2, 59);
-        color: white;
-    }
-    
-    
-    .right-bottom{
-        height: 35%;
-        background-color: white;
-        position: fixed;
-        bottom: 0;
-        width: 80%;
-        display: flex;
-        flex-direction: column; 
-    }
-    
-    .about{
-        font-size: 30px;
-        width: 15%;
-        height: 15%;
-        margin-top: 6%;
-        margin-left: 5%;
-    }
-    .aboutContent{
-        font-size: 13px;
-        word-wrap: break-word;
-        width: 80%;
-        margin-top: 3%;
-        margin-left: 5%;
-    
-    }
-    
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.5);
-        padding-top: 60px;
-    }
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 1% auto;
-        padding: 5px;
-        width: 90%;
-        text-align: center; /* 居中文本内容 */
-        border-radius: 10px;
-    
-    }
-    
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    /* 添加一些样式来美化内容 */
-    p {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    
-    .contact-info {
-        font-weight: bold;
-    }
-    
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #45a049;
-    }
-    
-    .aboutmetext{
-        text-align: left;
-        line-height: 2;
-        font-style: Roboto;
-        font-size: 12px;
-    }
-    .aboutmetextContainer{
-        margin-top: 2%;
-        width: 80%;
-        margin-left: 10%;
-        margin-bottom: 5%;
-    }
-    
-    .about-title{
-        font-size: 30px;
-        font-style: Roboto;
-    }
-    .educationContainer{
-        width: 100%;
         justify-content: center;
-        text-align: center;
-    
+        display: flex;
     }
-    
-    .education-title{
-        margin-bottom: 10%;
-        left:25%;
-        top:4%;
+
+    .nav-list {
+        display: none; /* 隐藏默认导航列表 */
+        flex-direction: column;
+        gap: 10px;
         position: absolute;
-        font-size: 20px;
-    }
-    .skillsPic{
-        width: 70%;
-        margin-top: 5%;
-    }
-    
-    .unilogo{
-         width: 100px;
-         margin-bottom: 10px;
-         height: auto;
-         cursor: pointer;
-    }
-    
-    .projectlogo{
-        width: 30%;
-        margin-bottom: 4%;
-    
-         cursor: pointer;
-    }
-    
-    .eductation-content{
-        display: flex;
-    }
-    
-    .university {
-        flex: 1;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #3498db;
         padding: 20px;
+        border-radius: 0 0 10px 10px;
     }
-    
-    .uniinfo{
-        font-size: 13px;
-    }
-    
-    .mitxtime{
-        margin-top: 30px;
-    }
-    
-    .skillpic{
-        width: 900px;
-        height: 400px;
-    }
-    
-    .skill-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px; 
-    }
-    
-    .refereespic{
-        width: 140px;
-        height: 180px;
-    }
-    
-    .pam{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    
-    
-    
-    
-    
-}
 
-@media (max-width:699px){
-    html, body {
-        height: 100%;
-        margin: 0;
+    .nav-list.show {
+        display: flex; /* 显示导航列表 */
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
         padding: 0;
-        font-family: 'Roboto', sans-serif; 
-    }
-    
-    .selection-button{
-        background-color: transparent; 
-        color: white;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        font-size: 11px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 100%; 
-    }
-    
-    .button-container{
+        margin: 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: #2980b9;
+        border-radius: 10px;
+        overflow: hidden;
     }
-    
 
-    .left-section{
-        width: 22%;
-        height: 100%;
-        background-color: rgb(2, 2, 59);
-        float: left;
-        box-sizing: border-box; 
-        position: fixed; 
+    nav ul li {
+        width: 100%; /* 使按钮宽度充满屏幕 */
     }
-    
-    .contactIcon{
-        background-color: none;
-        width: 30px;
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em; /* 增大字体以适应屏幕 */
+        padding: 15px 0;
+        background-color: #3498db;
+        border-bottom: 1px solid #2980b9;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #1abc9c; /* 悬停时的背景色 */
+    }
+
+    /* 在小屏幕上为每个链接之间增加适当的间距 */
+    nav ul li {
+        margin: 5px 0;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .projects {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .education-card {
         margin-left: 10px;
         margin-right: 10px;
-        border: none;
-        border-radius: 100px;
-        cursor: pointer;
-        margin-top: 40%;
     }
-    
-    .contactIcon-container{
-        display: flex;
-        position: fixed;
-        bottom: 8%; 
-        justify-content: space-around;
-        flex-direction: column;
 
-    }
-    
-    
-    .right-section{
-        background-color: white;
-        width: 75%;
-        height: auto;
-        float: left;
-        box-sizing: border-box;
-        margin-left: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .content-aera{
-        box-sizing: border-box; 
-        left: 30;
-        bottom: 10;
-        position: fixed;
-        width: 80%;
-        background-color: white;
-        margin: 5%;
-    }
-    
-    .right-top-aera{
-        height: 30%;
-        background-color: rgb(216, 220, 224);
-        position: fixed;
-        top: 0;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .hi{
-        color: black;
-        margin-left: 40px;
-        width: 190px;
-    }
-    
-    .Joe{
-        color: black;
-        margin-left: 40px;
-        width: 30px;
-        font-size: 20PX;
-        font-style: Roboto;
-        
-    }
-    .horizontal-line {
-        border: none;
-        height: 2px;
-        background-color: #000; 
-        margin: 0; 
-        width: 100px;
-        margin-top: 20px;
-        margin-left:40px ;
-    }
-    .Developer{
-        color: black;
-        margin-left: 40px;
-        width: 370px;
-        font-size: 10PX;
-        margin-top: 30px;
-        font-style: Roboto;
-    }
-    .information {
-        top: 5%;
-        position: relative; 
-        align-items: center; 
-        height: 80%; 
-        flex-direction: column; 
-        width: 40%;
-    }
-    
-    .careerPhoto{
-        display: none;
-    }
-    .photo-aera{
-        height: 100%;
-        display: flex;
-        margin-right: 20%;
-    }
-    .avatar{
-        width: 30%;
-        height: auto;
-    }
-    .hire{
-        height: 10%;
-        position: fixed;
-        top: 30%;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .downloadResume{
-        flex-grow: 1; 
-        width: 50%; 
-        cursor: pointer;
-        border: none;
-        font-size: 15px;
-        background-color: rgb(151, 9, 9);
-        color: white;
-    }
-    .contactMe{
-        flex-grow: 1; 
-        width: 50%; 
-        cursor: pointer;
-        border: none;
-        font-size: 15px;
-        background-color: rgb(2, 2, 59);
-        color: white;
-    }
-    
-    
-    .right-bottom{
-        height: 35%;
-        background-color: white;
-        position: fixed;
-        top: 40%;
-        width: 80%;
-        display: flex;
-        flex-direction: column; 
-        text-align: center;
-    }
-    
-    .about{
-        font-size: 30px;
-        width: 15%;
-        height: 15%;
-        margin-top: 6%;
-        margin-left:22%;
-        margin-bottom: 15%;
-    }
-    .aboutContent{
-        font-size: 13px;
-        word-wrap: break-word;
-        width: 70%;
-
-        margin-top: 5%;
-        margin-left: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
         left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.5);
-        padding-top: 60px;
     }
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 1% auto;
-        padding: 5px;
-        height: auto;
-        width: 90%;
-        text-align: center; /* 居中文本内容 */
-        border-radius: 10px;
-    
+
+    .timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        transform: none;
     }
-    
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
+
+    .timeline:before {
+        left: 10px;
     }
-    
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
+    .project-card {
+        width: 90% ;
+        margin-bottom: 20px;
     }
-    
-    /* 添加一些样式来美化内容 */
-    p {
-        font-size: 18px;
-        margin-bottom: 10px;
+    .skills h1, .fields h1 {
+        font-size: 2em;
     }
-    
-    .contact-info {
-        font-weight: bold;
+
+    .fields ul {
+        font-size: 1em;
     }
-    
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
+
+    .timeline-content {
+        margin-left: 30px;
     }
-    
-    button:hover {
-        background-color: #45a049;
+
+    .referee h1 {
+        font-size: 2em;
     }
-    
-    .aboutmetext{
-        text-align: left;
-        line-height: 2;
-        font-style: Roboto;
-        font-size: 10px;
-    }
-    .aboutmetextContainer{
-        margin-top: 2%;
-        width: 80%;
-        margin-left: 10%;
-        margin-bottom: 5%;
-    }
-    
-    .about-title{
-        font-size: 30px;
-        font-style: Roboto;
-    }
-    .educationContainer{
-        width: 100%;
+
+    .referee-card {
+        flex-direction: column;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20%;
-    }
-    
-    .education-title{
-        display: none;
-    }
-    .skillsPic{
-        width: 70%;
-        margin-top: 5%;
-    }
-    
-    .unilogo{
-         width: 100px;
-         margin-bottom: 10px;
-         height: auto;
-         cursor: pointer;
-    }
-    
-    .projectlogo{
-        width: 30%;
-        margin-bottom: 4%;
-    
-         cursor: pointer;
-    }
-    
-    .eductation-content{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .university {
-        flex: 1;
-        padding: 20px;
-    }
-    
-    .uniinfo{
-        font-size: 13px;
-    }
-    
-    .mitxtime{
-        margin-top: 30px;
-    }
-    
-    .skillpic{
-        width: 900px;
-        height: 400px;
-    }
-    
-    .skill-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px; 
-        flex-direction: column;
-        
-    }
-    
-    .refereespic{
-        width: 50px;
-        height: auto;
     }
 
-    .pam{
-        margin-bottom: 40%;
+    .referee-info {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .about-content{
-        height: auto;
-        margin-top: 250%;
+    .referee-photo img {
+        margin: 0 auto;
     }
-    
-
-    
-    
-    
     
 }
-
-
-
-

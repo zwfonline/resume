@@ -55,41 +55,45 @@
           
     </header>
 
-    <section class="about-me">
-        <h3>About Me</h3>
-        <p>
-            I am currently pursuing a Master of Information Technology at the University of South Australia, focusing on business analysis, data visualization, and front-end development. With a diverse background in business and technology, I bring a unique perspective to solving complex problems.
-        </p>
-        <p>
-            My technical skills include Python, JavaScript (React), HTML, CSS, MySQL, and data visualization tools such as PowerBI, Tableau, and KNIME. I have successfully completed several projects, including developing a personal resume website and contributing to the UniSA ASO website.
-        </p>
-        <p>
-            I have a strong passion for continuous learning and growth in the field of IT. My previous experience as an Analyst at Deloitte and a Freight Forwarder at SF Express has equipped me with valuable analytical and problem-solving skills.
-        </p>
-        <p>
-            I am actively seeking opportunities for internships or part-time roles that will allow me to apply my skills and contribute to impactful projects.
-        </p>
+    <section class="referee">
+        <h1>Referees</h1>
+        
+        <div class="referee-card">
+            <div class="referee-info">
+                <h2>Dr Pam Hawkswell</h2>
+                <p>Lecturer in Career Transition</p>
+                <p>The University of Queensland</p>
+                <button class="contact-button" onclick="showContactInfo(this)">Get Contact Information</button>
+                <div class="contact-info" style="display: none;">
+                    <p>Email: <a href="mailto:p.hawkswell@uq.edu.au">p.hawkswell@uq.edu.au</a></p>
+                    <p>Phone: 0412 799 910</p>
+                </div>
+            </div>
+            <div class="referee-photo">
+                <img src="https://i.postimg.cc/T13F1p67/Screenshot-2024-08-17-155033.jpg" alt="Dr Pam Hawkswell Photo">
+            </div>
+        </div>
+
+        <div class="referee-card">
+            <div class="referee-info">
+                <h2>Alyson Rowe Hopkins</h2>
+                <p>UQ Alumni</p>
+                <p>The University of Queensland</p>
+                <button class="contact-button" onclick="showContactInfo(this)">Get Contact Information</button>
+                <div class="contact-info" style="display: none;">
+                    <p>Email: <a href="mailto:aly.teacher@gmail.com">aly.teacher@gmail.com</a></p>
+                    <p>Phone: 0418 412 380</p>
+                </div>
+            </div>
+            <div class="referee-photo">
+                <img src="https://i.postimg.cc/RVjp5PNb/aly.jpg" alt="Alyson Rowe Hopkins Photo">
+            </div>
+        </div>
     </section>
 
-    <!-- Leave a Message Section -->
-    <section class="leave-message">
-        <h3>Leave a Message</h3>
-        <form id="messageForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+
+
+ 
 
 
     <!-- Footer Section -->
